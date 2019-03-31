@@ -14,11 +14,16 @@ body {
     max-width: 1000px;
     margin: auto;
     box-shadow: 1px 1px 15px #000;
-/*    background: #eee;*/
 /*    display: grid;*/
+    grid-template-columns: 1fr 1fr;
+}
+
+.item1{
+ grid-column: span 2;
 }
 
 h1 {
     text-align: center;
     padding: 20px 10px;
+    grid-column: span 2;
 }
