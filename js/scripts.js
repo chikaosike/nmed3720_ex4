@@ -31,12 +31,14 @@ function init() {
 
 
             for (x = 175; x < 250; x += 25) {
-                imageString += "<img src='https://picsum.photos/g/400/600?image=" + picsum[x].id + "'>" + "<h2>" + str1.link(picsum[x].author_url) + "</h2>" + "<p>" + post.link(picsum[x].post_url) + "</p>";
+                var str2 = picsum[x].author;
+                imageString += "<img src='https://picsum.photos/g/400/600?image=" + picsum[x].id + "'>" + "<h2>" + str2.link(picsum[x].author_url) + "</h2>" + "<p>" + post.link(picsum[x].post_url) + "</p>";
             }
 
 
             for (x = 250; x < 325; x += 25) {
-                imageString += "<img src='https://picsum.photos/400/600?image=" + picsum[x].id + "'>" + "<h2>" + str1.link(picsum[x].author_url) + "</h2>" + "<p>" + post.link(picsum[x].post_url) + "</p>";
+                var str3 = picsum[x].author;
+                imageString += "<img src='https://picsum.photos/400/600?image=" + picsum[x].id + "'>" + "<h2>" + str3.link(picsum[x].author_url) + "</h2>" + "<p>" + post.link(picsum[x].post_url) + "</p>";
             }
 
 
